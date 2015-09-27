@@ -8,3 +8,12 @@ and open the template in the editor.
     Author     : drewbryant
 */
 
+h1{
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+}
+span{
+    text-align: right;
+}
