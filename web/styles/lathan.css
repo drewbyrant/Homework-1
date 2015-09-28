@@ -1,0 +1,80 @@
+//Copyright Patrick Lathan & Drew Bryant 2015
+html {
+    
+}
+
+body {
+    width: 50em;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+}
+.small {
+    visibility: hidden;
+    display: none;
+}
+.full {
+    float: none;
+}
+
+main {
+    margin: 2em;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin: 0;
+}
+h2 {
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 0;
+    clear: both;
+}
+
+p {
+    margin: 0;
+    float: left;
+}
+.date {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    clear: both;
+}
+
+.job {
+    margin-bottom: 1em;
+}
+.future {
+    color: red;
+}
+
+@media only screen and (max-width: 500px) {
+    .full {
+        visibility: hidden;
+        display: none;
+    }
+    .small {
+        visibility: visible;
+        display: block;
+        float: none;
+    }
+    main {
+        margin-top: 0;
+    }
+    body {
+        width: 450px;
+    }
+    p, ul, h2, .date {
+        float: left;
+        clear: both;
+    }
+}
