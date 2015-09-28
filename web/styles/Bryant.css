@@ -1,19 +1,64 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Copyright Andrew Bryant & Patrick Lathan 2015
 */
 /* 
     Created on : Sep 26, 2015, 3:55:37 PM
     Author     : drewbryant
 */
 
+body{
+    width: 50em;
+    margin: auto;
+    font-family: sans-serif;
+    
+}
 h1{
     text-align: center;
+    font-size: 1.75em;
 }
 h2{
     text-decoration: underline;
+    font-size: 1em;
 }
 span{
-    text-align: right;
+    float: right;
+}
+p, li, span{
+    font-size: .9em;
+}
+h1, h2, p, ul{
+    margin: 0px;
+}
+.full{
+    text-align: center;
+}
+.small{
+    visibility: hidden;
+    display: none;
+}
+.future{
+    color: red;
+}
+@media only screen and (max-width: 500px){
+    body{
+        width: 400px;
+    }
+    .small{
+        text-align: center;
+        visibility: visible;
+        display: block;
+    }
+    span.small{
+        text-align: left;
+    }
+    .full{
+        visibility: hidden;
+        display: none;
+    }
+    span{
+        float: none;
+    }
+    i{
+        clear: both;
+    }
 }
